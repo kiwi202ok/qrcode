@@ -1,0 +1,77 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --btn-gradient: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --btn-gradient: linear-gradient(45deg, #fc466b, #3f5efb);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 1rem 0;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  resize: none;
+  transition: border 0.3s;
+}
+
+textarea:focus {
+  border-color: #4facfe;
+}
+
+button {
+  padding: 10px 20px;
+  background: var(--btn-gradient);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+  border-radius: 30px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#qrcode {
+  margin-top: 20px;
+}
